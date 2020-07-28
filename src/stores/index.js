@@ -1,0 +1,1 @@
+export { default as ContactAtom } from './atoms/ContactAtom';

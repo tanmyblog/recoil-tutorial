@@ -1,0 +1,38 @@
+@import '../../assets/theme';
+
+.header-container {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid $text-primary-opacity-color;
+    background-color: $light-mode-bg;
+
+    &--dark-mode{
+        background-color: $dark-mode-header-bg;
+        border-bottom: 'none';
+    };
+
+    .header-box {
+        width: 80%;
+        height: 50px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;        
+
+        .header-title {
+            color: $text-dark-color; 
+        };
+
+        .header-dark-title {
+            color: $text-light-color; 
+        };
+
+        .header-button {
+            color: $light-mode-color; 
+        };
+    }
+}

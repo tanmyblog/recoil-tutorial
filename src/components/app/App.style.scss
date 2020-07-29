@@ -4,6 +4,8 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 
     color: $light-mode-color;
     background-color: $light-mode-bg;
@@ -15,3 +17,13 @@
         background-color: $dark-mode-main-bg;
     }
 }
+
+.loading {
+    flex: 1;
+    width: 100%;
+    height: calc(100% - 61px);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden auto;
+};

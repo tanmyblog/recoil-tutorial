@@ -1,0 +1,78 @@
+@import '../../assets/theme';
+
+.Post {
+    margin-top: 32px;
+    border-bottom: 1px solid $text-primary-opacity-color;
+
+    &--dark-mode {
+        border-bottom: 1px solid $text-light-color;
+    };
+
+    h2 {
+        margin: 0;
+    };
+
+    p:first-of-type {
+        font-size: 0.9rem;
+        opacity: 0.6;
+        margin: 4px 0 16px;
+    };
+
+    a {
+        text-decoration: none;
+        color: $link-color;
+        opacity: 0.8;
+    };
+
+    .desc {
+        font-style: italic;
+        position: relative;
+        left: 16px;
+    };
+    .desc::before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 2px;
+        left: -16px;
+        background-color: $text-dark-color;
+        transition: .4s;
+
+    }; 
+
+    .desc--dark-mode::before {
+        background-color: $text-light-color;
+    };
+
+    .content {
+        margin-bottom: 16px;
+    };
+
+    .interacion {
+        display: flex;
+        align-items: 'center';
+        margin: 16px 0;
+
+        img {
+            width: 30px;
+            height: 30px;
+            user-select: none;
+            cursor: pointer;
+        };
+        .like {
+            margin-top: -5px;
+        };
+        .dislike {
+            margin-left: 16px;
+            margin-bottom: -5px;
+            transform: rotate(180deg);
+        };
+        span {
+            margin-left: 8px;
+        };
+    };
+};
+
+.Post:last-of-type {
+    border-bottom: none;
+};

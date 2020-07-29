@@ -1,0 +1,10 @@
+@import '../../../assets/theme';
+
+.Main {
+    flex: 1;
+    width: 100%;
+    height: calc(100% - 61px);
+    display: flex; 
+    justify-content: center;
+    overflow: hidden auto;
+};

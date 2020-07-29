@@ -1,9 +1,10 @@
-@import '../../assets/theme';
+@import '../../../assets/theme';
 
 .header-container {
     width: 100%;
-    height: auto;
+    height: 60px;
     position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -17,8 +18,9 @@
 
     .header-box {
         width: 80%;
-        height: 50px;
-        padding: 8px 16px;
+        height: 100%;
+        padding: 8px 0;
+        box-sizing: border-box;
         display: flex;
         align-items: center;
         justify-content: space-between;        
@@ -34,5 +36,21 @@
         .header-button {
             color: $light-mode-color; 
         };
+
+        .Dark-title {
+            a {
+                text-decoration: none;
+                color: $text-light-color;
+                opacity: 0.8;
+            };
+        };
+
+       .Light-title {
+            a {
+                text-decoration: none;
+                color: $text-dark-color;
+                opacity: 0.8;
+            };
+       };
     }
 }

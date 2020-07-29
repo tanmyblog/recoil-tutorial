@@ -7,4 +7,14 @@
     display: flex; 
     justify-content: center;
     overflow: hidden auto;
+
+    color: $light-mode-color;
+    background-color: $light-mode-bg;
+
+    transition: 300ms color ease-in, 300ms bg ease-in;
+
+    &--dark-mode {
+        color: $dark-mode-color;
+        background-color: $dark-mode-main-bg;
+    }
 };

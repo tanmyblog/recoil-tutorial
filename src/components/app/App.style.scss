@@ -5,17 +5,7 @@
     height: 100vh;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
-
-    color: $light-mode-color;
-    background-color: $light-mode-bg;
-
-    transition: 300ms color ease-in, 300ms bg ease-in;
-
-    &--dark-mode {
-        color: $dark-mode-color;
-        background-color: $dark-mode-main-bg;
-    }
+    flex-direction: column; 
 }
 
 .loading {

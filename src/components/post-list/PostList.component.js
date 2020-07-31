@@ -6,7 +6,7 @@ import './PostList.style.scss';
 import { Layout, Progress } from '../common';
 import Post from '../post';
 
-import { getAll } from '../../stores/selectors/WebConfigSelector';
+import { getAll } from '../../stores/selectors/PostSelector';
 
 const PostList = () => {
     const posts = useRecoilValueLoadable(getAll);

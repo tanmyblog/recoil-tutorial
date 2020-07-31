@@ -5,7 +5,7 @@ import './PostDetail.style.scss';
 
 import { Layout, Progress } from '../common';
 
-import { getById } from '../../stores/selectors/WebConfigSelector';
+import { getById } from '../../stores/selectors/PostSelector';
 import { WebConfigState } from '../../stores/atoms/WebConfigAtom';
 
 const icons = {
